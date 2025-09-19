@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FWI Prediction Home</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            color: #ecf0f1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+
+        .container {
+            background-color: rgba(44, 62, 80, 0.85);
+            padding: 40px 60px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            border: 2px solid #3498db;
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            width: 80%; /* Added: Make container responsive */
+            max-width: 600px; /* Added: Limit max width on large screens */
+        }
+
+        h1 {
+            color: #3498db;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #bdc3c7;
+            font-size: 1.1em;
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+
+        .predict-button {
+            display: inline-block;
+            padding: 15px 40px;
+            font-size: 1.2em;
+            color: #ecf0f1;
+            background-color: #e74c3c;
+            border: none;
+            border-radius: 50px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            box-shadow: 0 5px 15px rgba(231, 76, 60, 0.4);
+            font-weight: bold;
+        }
+
+        .predict-button:hover {
+            background-color: #c0392b;
+            transform: scale(1.05);
+        }
+
+        .predict-button:active {
+            transform: scale(0.95);
+        }
+
+        /* --- Mobile Responsiveness --- */
+        @media (max-width: 600px) {
+            .container {
+                width: 90%;
+                padding: 20px; /* Reduced padding for smaller screens */
+            }
+
+            h1 {
+                font-size: 1.5em; /* Reduced font size */
+            }
+
+            p {
+                font-size: 1em; /* Reduced font size */
+            }
+
+            .predict-button {
+                width: 100%; /* Make button full-width on mobile */
+                padding: 15px; /* Adjust padding */
+                font-size: 1em; /* Reduced font size */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>🔥 FWI Prediction System</h1>
+        <p>Your portal to predicting the Fire Weather Index with precision.</p>
+        
+        <a href="/predictdata" class="predict-button">Get Started</a>
+    </div>
+
+</body>
+</html>
